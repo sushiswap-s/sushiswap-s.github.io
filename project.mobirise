@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2024-01-16 13:25",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://sushiswap-s.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://sushiswap-s.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "imageResize": true,
+    "usedWebp": true,
+    "favicon": false,
+    "mbrsiteDomain": "ggfbg4oeui",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "SushiSwap™ | Home Official Site",
+        "meta_descr": "Web SushiSwap is a community-driven decentralized exchange (DEX) for traders and liquidity providers.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://sushiswap.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/sushiswap.png\" alt=\"SushiSwap\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "u1vI0clbXu",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://sushiswap-s.github.io/\" class=\"text-primary\">SushiSwap</a>™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b><a href=\"https://www.sushi.com/swap\" class=\"text-primary\">Sushiswap</a>: Unraveling the Culinary Artistry of Decentralized Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the vibrant and ever-evolving realm of decentralized finance (DeFi), Sushiswap has emerged as a significant player, bringing a unique blend of innovation and community-driven development to the forefront. This article aims to explore the intricacies of Sushiswap, diving into its origins, features, and the impact it has had on the decentralized finance landscape.\n<br>\n<br>The <a href=\"https://sushiswap-s.github.io/\" class=\"text-primary\">Sushiswap</a> Saga:\n<br>\n<br>Sushiswap entered the DeFi scene in 2020 as a decentralized exchange (DEX) built on the Ethereum blockchain. Its inception can be traced back to the decentralized finance boom, a period marked by the rapid development of various financial services and platforms operating without traditional intermediaries.\n<br>\n<br>Forked from Uniswap:\n<br>At its core, Sushiswap is a fork of Uniswap, another leading decentralized exchange. The project was created by an anonymous figure known as \"Chef Nomi,\" who saw an opportunity to build upon Uniswap's success by introducing additional features and a community-centric governance model.\n<br>\n<br>Community-Driven Development:\n<br>What sets Sushiswap apart is its community-driven approach to development. Instead of a traditional corporate structure, the project relies on decentralized governance, allowing token holders to participate in decision-making processes. This unique model has contributed to a sense of ownership and collaboration within the Sushiswap community.\n<br>\n<br>Key Features of Sushiswap:\n<br>\n<br>Automated Market Making (AMM):\n<br>Sushiswap, like its predecessor Uniswap, operates on the Automated Market Making (AMM) model. This means that users can trade cryptocurrencies directly from their wallets by providing liquidity to pools, enabling decentralized trading without the need for a centralized intermediary.\n<br>\n<br>Liquidity Pools and Yield Farming:\n<br>Sushiswap introduced the concept of liquidity pools, where users can deposit their cryptocurrency assets to provide liquidity for the decentralized exchange. In return, liquidity providers earn fees generated by the trading activity. Additionally, Sushiswap pioneered the concept of \"Yield Farming,\" incentivizing users to stake their tokens in specific pools to earn additional rewards.\n<br>\n<br>SUSHI Token:\n<br>The native governance token of Sushiswap is called SUSHI. Holders of SUSHI have voting rights in the decentralized governance system, allowing them to propose and vote on changes to the protocol. SUSHI tokens are also distributed to liquidity providers as a reward for participating in the ecosystem.\n<br>\n<br>Onsen:\n<br>To further incentivize liquidity provision, Sushiswap introduced the \"Onsen\" program, where additional rewards in the form of SUSHI tokens are distributed to users who stake their tokens in selected liquidity pools. This mechanism has proven effective in attracting liquidity to specific pairs.\n<br>\n<br>Evolution and Upgrades:\n<br>\n<br>Sushiswap has undergone several upgrades and iterations since its launch, showcasing its commitment to continuous improvement. These upgrades often include enhancements to the protocol's functionality, security, and user experience. The project's adaptability has played a crucial role in maintaining its relevance and competitiveness within the ever-changing DeFi landscape.\n<br>\n<br>Challenges and Controversies:\n<br>\n<br>Sushiswap has not been without its share of challenges and controversies. Shortly after its launch, Chef Nomi, the anonymous founder, sold a significant portion of the project's tokens, causing a stir in the community. This move was criticized for lacking transparency and raised concerns about the project's sustainability. However, Chef Nomi later returned the funds to the project's treasury, and subsequent development has been community-led.\n<br>\n<br>The importance of Community Governance:\n<br>\n<br>The governance model of Sushiswap, characterized by community involvement and voting, is a testament to the decentralized nature of the project. This model empowers users to shape the future of Sushiswap, fostering a sense of collective responsibility and alignment of interests.\n<br>\n<br>Sushiswap's Impact on DeFi:\n<br>\n<br>Sushiswap has played a pivotal role in shaping the decentralized finance landscape. Its introduction of novel concepts like liquidity pools, yield farming, and decentralized governance has influenced the development of subsequent DeFi projects. The project's success has demonstrated the potential of decentralized exchanges to compete with and even surpass traditional centralized exchanges in terms of liquidity and user engagement.\n<br>\n<br>Looking Ahead:\n<br>\n<br>As Sushiswap continues to evolve and adapt to the ever-changing DeFi landscape, its role in shaping the future of decentralized finance remains significant. The community-driven ethos, innovative features, and commitment to continuous improvement position Sushiswap as a dynamic and influential player in the broader cryptocurrency ecosystem.\n<br>\n<br>Conclusion:\n<br>\n<br>Sushiswap stands as a culinary masterpiece in the world of decentralized finance, blending innovation, community collaboration, and novel governance models. From its humble beginnings as a Uniswap fork to becoming a major force in the DeFi space, Sushiswap has left an indelible mark on the industry. As the project navigates challenges, embraces upgrades, and continues to involve its community in decision-making, the Sushiswap saga unfolds, offering a glimpse into the future of decentralized finance.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "u1vI0ZucLI",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
